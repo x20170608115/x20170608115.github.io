@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}	
+		form{
+			width: 400px;
+			height: 500px;
+			background-color: cadetblue;
+			position: absolute;
+			margin: auto;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			padding-top: 20px;
+			text-align: center;
+		}	
+		form div{
+			margin: 15px 0px;
+		}	
+		form input[type="submit"]{
+			width: 100px;
+			margin-top: 20px;
+		}	
+		</style>
+	</head>
+	<body>
+		<form action="http://127.0.0.1/server.php" method="post">
+			<div>
+				<label for="username">用户名 :</label>
+				<input type="text" name="username" id="username" />
+			</div>
+			<div>
+				<label for="psw">密&nbsp;&nbsp;&nbsp;码:</label>
+				<input type="text" name="pwd" id="pwd" />				
+			</div>
+			<div>
+				<label for="e_mail">邮&nbsp;&nbsp;&nbsp;箱：</label>
+				<input type="email" name="e_mail" id="email" />
+			</div>			
+			<div>
+			<label for="nan">性别</lable>
+		    <input type="radio" name="nan" checked="checked"/>男
+		    <input type="radio" name="nan" />女
+			</div>
+			</div>
+			兴趣
+			<input type="checkbox"/>唱歌
+			<input type="checkbox"/>跳舞
+			<input type="checkbox"/>游泳
+			<div>
+			上传头像
+			<input type="file" /><br /><br />
+			
+			
+			<input type="submit" value="提交" />
+			<input type="reset" />
+			<input type="button" value="普通按钮" />
+			
+			
+			
+			
+			
+			
+		    
+		</form>
+	</body>
+</html>
